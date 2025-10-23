@@ -1,0 +1,93 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: gray;
+}
+
+.outer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+.container{
+    background: beige;
+    border: 2px black dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.msg-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgb(130, 202, 226);
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+}
+
+.msg-btn:hover{
+    background: rgb(165, 224, 244);
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    background: bisque;
+    width:20vw;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+#name, #message{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+label[for="name"]{
+    flex: 1;
+}
+label[for="message"]{
+    flex: 2;
+}
+
+#message{
+    height: 60%;
+}
+
+.submit-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: slateblue;
+    transition: all 0.15 ease-in;
+    color: white;
+}
+
+.submit-btn:hover{
+    background-color: rgb(132, 120, 212);
+}
