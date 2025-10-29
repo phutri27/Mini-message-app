@@ -9,9 +9,12 @@
         <div class="outer">
           <% messages.forEach((message) => { %>
               <div class="container">
-                  <p><%= message.text %></p>
-                  <p><%= message.user %></p>
-                  <p><%= message.added %></p>
+                  <p><%= message.message %></p>
+                  <p><%= message.author %></p>
+                  <p><%= message.date %></p>
+                  <form action="/<%= message.id %>/delete" method="POST">
+                    <button type="submit">Delete</button>
+                  </form>
               </div>
           <% }) %>
         </div>
